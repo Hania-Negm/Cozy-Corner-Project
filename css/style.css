@@ -196,6 +196,10 @@
 
 }
 
+.responsive{
+    width: 50%;
+}
+
 
 @media(max-width:1036px){
     .hero-section .row{
@@ -209,7 +213,12 @@
         margin-right: auto; }
 
     .hero-heading h1 , .hero-heading p{text-align: center;}
-    .col-6{width: 100%;}
+    .responsive{width: 100%;}
+    .hero-ul{
+        /* margin-left: auto;
+        margin-right: auto; */
+        justify-content: center;
+    }
 }
 
 @media(max-width:536px){
@@ -230,6 +239,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 32px;
+    gap: 30px;
 }
 
 .number-li{
@@ -261,5 +271,20 @@
     font-family: "Poppins", "sans-serif";
     font-size: 18px;
     font-weight: 400;
+}
+
+@media(max-width:1036px){
+    .number-ul{
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .number-li{text-align: center;}
+
+    .number-li svg , .number-li h2{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 /*End Number Section*/
